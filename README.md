@@ -1,5 +1,5 @@
 ## CO*N*CEPT
-![renders](http://users-phys.au.dk/jmd/github/concept/concept_renders.gif)
+![renders](http://users-phys.au.dk/jmd/github/concept/render2D.png)
 
 CO*N*CEPT (**CO**smological ***N***-body **C**od**E** in **P**y**T**hon)
 is a free and open-source code for cosmological structure formation.
