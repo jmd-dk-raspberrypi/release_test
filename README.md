@@ -8,6 +8,9 @@ for massively parallel computer clusters with distributed memory.
 The code is written almost exclusively in Python, but achieves C-like
 performance thanks to Cython.
 
+CO*N*CEPT is a mixed particle and grid code. Current development
+focuses on non-linear neutrino simulations, as described in
+the [νCO*N*CEPT paper](https://arxiv.org/abs/1712.03944).
 
 ### Version 0.1.0
 The 0.1.0 release corresponds to the version of the code used for the
@@ -36,23 +39,22 @@ absolute newest (and unstable!) version, use `concept_version=master`.
 Note that the above will install *all* dependencies into
 `/path/to/concept`, regardless of whether these are already installed
 somewhere else on the system. One of these dependencies is an
-MPI 3 library (the exact implementation doe not matter).
-When installing CO*N*CEPT on a cluster it can be preferable to not
-include such a library among the dependencies to be installed,
-but simply use the existing library. This is achived by setting the
-`mpi_dir` variable, e.g.
+MPI 3 library (any implementation). When installing CO*N*CEPT on a
+cluster it can be preferable not to include such a library among the
+dependencies to be installed, but simply use the existing library. 
+This is achieved by setting the `mpi_dir` variable, e.g.
 
     concept_version=0.1.0
     mpi_dir=/path/to/mpi bash <(wget -O- --no-ch https://raw.githubusercontent.com/jmd-dk/concept/v{concept_version}/installer) [/path/to/concept] [--fast]
-The same trick may also be used for all other dependencies.
+This trick may also be used should you wish to use some other pre-installed dependency.
 
 
 ### Further documentation
 Unfortunately, no up-to-date documentation exists.
 An out-of-date [user guide](https://arxiv.org/abs/1510.07621) from back
-when the code was particle-only,
+when CO*N*CEPT was a pure particle code,
 as well as the [master's thesis](http://users-phys.au.dk/jmd/github/concept/masters_thesis.pdf)
 for which CO*N*CEPT was originally written, are available.
 
-Please direct any questions and feedback to the author at dakin@phys.au.dk.
+Please direct any questions and feedback to the author: dakin@phys.au.dk
 
