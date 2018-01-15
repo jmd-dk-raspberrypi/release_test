@@ -16,12 +16,17 @@ The 0.1.0 release corresponds to the version of the code used for the
 As CO*N*CEPT has a lot of dependencies, it comes with an
 [installation script](installer) which install all of these
 (and CO*N*CEPT itself) into a single location.
-
 The path to the CO*N*CEPT installation directory may be given
 as an argument. If not, the installer will prompt you for a directory.
+The installation will take a couple of hours depending on the hardware.
+To speed up the installation you may supply the optional `--fast`
+option which skips all tests (not recommended).
+You can download and invoke the installer in one go by
 
-    ./installer /path/to/concept [--fast]
-where the optional `--fast` option speeds up the installation by s
+    bash <(wget -O- --no-ch https://raw.githubusercontent.com/jmd-dk/concept/0.1.0/installer) [/path/to/concept] [--fast]
+
+where brackets indicate optional arguments. Note that the `bash`
+is required regardless of which shell you are using.
 
 
 ### Further documentation
