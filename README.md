@@ -8,9 +8,11 @@ for massively parallel computer clusters with distributed memory.
 The code is written almost exclusively in Python, but achieves C-like
 performance thanks to Cython.
 
+
 ### Version 0.1.0
 The 0.1.0 release corresponds to the version of the code used for the
 [νCO*N*CEPT paper](https://arxiv.org/abs/1712.03944).
+
 
 ### Quick installation instructions
 As CO*N*CEPT has a lot of dependencies, it comes with an
@@ -23,10 +25,26 @@ To speed up the installation you may supply the optional `--fast`
 option which skips all tests (not recommended).
 You can download and invoke the installer in one go by
 
-    bash <(wget -O- --no-ch https://raw.githubusercontent.com/jmd-dk/concept/0.1.0/installer) [/path/to/concept] [--fast]
+    concept_version=v0.1.0
+    bash <(wget -O- --no-ch https://raw.githubusercontent.com/jmd-dk/concept/{concept_version}/installer) [/path/to/concept] [--fast]
 
-where brackets indicate optional arguments. Note that the `bash`
-is required regardless of which shell you are using.
+where brackets indicate optional arguments. Note that the initial
+"`bash`" is required regardless of which shell you are using.
+You may adjust the value of `concept_version` to your liking. For the
+absolute newest (and unstable!) version, use `concept_version=master`.
+
+Note that the above will install *all* dependencies into
+`/path/to/concept`, regardless of whether these are already installed
+somewhere else on the system. One of these dependencies is an
+MPI 3 library (the exact implementation doe not matter).
+When installing CO*N*CEPT on a cluster it can be preferable to not
+include such a library among the dependencies to be installed,
+but simply use the existing library. This is achived by setting the
+`mpi_dir` variable, e.g.
+
+    concept_version=0.1.0
+    mpi_dir=/path/to/mpi bash <(wget -O- --no-ch https://raw.githubusercontent.com/jmd-dk/concept/v{concept_version}/installer) [/path/to/concept] [--fast]
+The same trick may also be used for all other dependencies.
 
 
 ### Further documentation
@@ -35,3 +53,6 @@ An out-of-date [user guide](https://arxiv.org/abs/1510.07621) from back
 when the code was particle-only,
 as well as the [master's thesis](http://users-phys.au.dk/jmd/github/concept/masters_thesis.pdf)
 for which CO*N*CEPT was originally written, are available.
+
+Please direct any questions and feedback to the author at dakin@phys.au.dk.
+
