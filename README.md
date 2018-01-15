@@ -17,7 +17,7 @@ The 0.1.0 release corresponds to the version of the code used for the
 [νCO*N*CEPT paper](https://arxiv.org/abs/1712.03944).
 
 
-### Quick installation instructions
+### Installation instructions
 As CO*N*CEPT has a lot of dependencies, it comes with an
 [installation script](installer) which install all of these
 (and CO*N*CEPT itself) into a single location.
@@ -45,7 +45,7 @@ dependencies to be installed, but simply use the existing library.
 This is achieved by setting the `mpi_dir` variable, e.g.
 
     concept_version=0.1.0
-    mpi_dir=/path/to/mpi bash <(wget -O- --no-ch https://raw.githubusercontent.com/jmd-dk/concept/v{concept_version}/installer) [/path/to/concept] [--fast]
+    mpi_dir=/path/to/mpi bash <(wget -O- --no-ch https://raw.githubusercontent.com/jmd-dk/concept/{concept_version}/installer) [/path/to/concept] [--fast]
 This trick may also be used should you wish to use some other pre-installed dependency.
 
 
