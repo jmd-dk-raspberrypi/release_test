@@ -11,10 +11,8 @@ performance thanks to Cython.
 CO*N*CEPT is a mixed particle and grid code. Current development
 focuses on non-linear neutrino simulations, as described in
 the [νCO*N*CEPT paper](https://arxiv.org/abs/1712.03944).
-
-### Version 0.1.0
-The 0.1.0 release corresponds to the version of the code used for the
-[νCO*N*CEPT paper](https://arxiv.org/abs/1712.03944).
+The 0.1.0 release corresponds to the version of the code used
+for this paper.
 
 
 ### Installation instructions
