@@ -1,4 +1,5 @@
-## CO*N*CEPT
+CO*N*CEPT
+=========
 <img align="right" src="http://users-phys.au.dk/jmd/github/concept/render2D.png"/>
 
 CO*N*CEPT (**CO**smological ***N***-body **C**od**E** in **P**y**T**hon)
@@ -15,8 +16,8 @@ The 0.1.0 release corresponds to the version of the code used
 for this paper.
 
 
-
-### Installation instructions
+Installation instructions
+-------------------------
 As CO*N*CEPT has a lot of dependencies, it comes with an
 [installation script](installer) which installs all of these
 (and CO*N*CEPT itself) into a single location.
@@ -51,7 +52,8 @@ This trick may also be used should you wish to use
 some other pre-installed dependency.
 
 
-### Running the code
+Running the code
+----------------
 To run a small sample simulation, navigate to the `concept` directory
 and invoke
 
@@ -73,7 +75,8 @@ study the `example` parameter file. It is much larger than typical
 parameter files because it contains (almost) every single parameter.
 
 
-### Further documentation
+Further documentation
+---------------------
 Unfortunately, no additional up-to-date documentation exists.
 An out-of-date [user guide](https://arxiv.org/abs/1510.07621) from back
 when CO*N*CEPT was a pure particle code,
